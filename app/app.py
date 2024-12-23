@@ -25,8 +25,8 @@ except ImportError as e:
 # Load your data
 @st.cache_data
 def load_data():
-    # data_url = "test_data/xdr_cleaned.csv"
-    data_url = " https://drive.google.com/uc?export=download&id=1OQy9WoqTchcqxEShb3J5PomSlX5zqRwx"
+    data_url = "../data/xdr_cleaned.csv"
+    # data_url = " https://drive.google.com/uc?export=download&id=1OQy9WoqTchcqxEShb3J5PomSlX5zqRwx"
       
     df = pd.read_csv(data_url)
     return df
